@@ -1,10 +1,15 @@
 import './App.css';
+import {BrowserRouter} from 'react-router-dom'
+import { getApp } from './util/Helpers';
 
 function App() {
+const Currunt = getApp();
+  
   return (
-    <div className="App">
-     Hello
-    </div>
+    <BrowserRouter>
+    <Currunt />
+    </BrowserRouter>
+    
   );
 }
 
